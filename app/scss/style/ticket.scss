@@ -1,0 +1,84 @@
+.ticket{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @include media(lg){
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    &__desc{
+        margin-bottom: 25px;
+    }
+    &__title{
+        max-width: 240px;
+        margin-bottom: 10px;
+        @include media(lg){
+            max-width: 45%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        @include media(md){
+            max-width: 85%;
+        }
+        @include media(sm){
+            max-width: 100%;
+        }
+    }
+    &__img{
+        padding-top: 60%;
+        background-size: cover;
+        background-position: center;
+    }
+    &__card{
+        border: 1px solid #EEE;
+        cursor: pointer;
+        @include media(lg){
+            margin-bottom: 20px;
+        }
+    }
+    &__part{
+        padding: 20px 13px;
+        transition: all .3s ease;
+        &:hover{
+            box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.07);
+        }
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-bottom: 25px;
+        padding-left: 12px;
+        li{
+            margin-bottom: 12px;
+            position: relative;
+            &::after{
+                content: "";
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                top: 50% ;
+                margin-top: -2.5px;
+                left: -12px;
+                background-color: $text;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &__middle{
+        margin-bottom: 20px;
+    }
+    &__buy{
+        *{
+            margin: 0;
+        }
+    }
+    &__box{
+        @include media(lg){
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.sponsor{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    @include media(lg){
+        padding-bottom: 0;
+    }
+    @include media(md){
+        margin-top: -30px;
+    }
+
+    @include media(sm){
+        padding-top: 0;
+        margin-top: 0;
+    }
+    &__title{
+        margin-bottom: 15px;
+        .title{
+            @include media(md){
+                font-size: 34px;
+            }
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 90px;
+        background-size: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #EEEE;
+        &-green{
+            border: 1px solid #2ADDAA;
+        }
+        &-blue{
+            border: 1px solid #B2E4F7;
+        }
+    }
+    &__row{
+        margin-bottom: 25px;
+    }
+    &__name{
+        margin-bottom: 23px;
+    }
+    &__desc{
+        margin-bottom: 15px;
+    }
+    &__swiper{
+        margin-bottom: 30px;
+    }
+    &__box{
+        margin-bottom: 35px;
+        @include media(lg){
+            margin-top: -65px;
+        }
+        @include media(md){
+            margin-top: -33px;
+        }
+    }
+}

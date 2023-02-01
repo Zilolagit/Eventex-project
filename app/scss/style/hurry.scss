@@ -1,0 +1,32 @@
+.hurry{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+        text-align: center;
+    }
+    &__info{
+        margin-bottom: 10px;
+    }
+    &__title{
+        max-width: 650px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        .title{
+            @include media(md){
+                font-size: 39px;
+            }
+            @include media(sm){
+                font-size: 29px;
+            }
+        }
+    }
+    &__desc{
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,19 @@
+.desc{
+    color: $text;
+    line-height: 1.4;
+    margin: 0;
+    font-size: 15px;
+    &-white{
+        color: #fff;
+    }
+    &-small{
+        font-size: 13px;
+    }
+    &-border{
+        border-right: 1px solid $text;
+        border-left: 1px solid $text;
+    }
+    &-color{
+        color: #ddd;
+    }
+}

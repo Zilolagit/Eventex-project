@@ -1,0 +1,128 @@
+.footer{
+    background-color: #151515;
+    &__top{
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    &__logo{
+        margin-bottom: 12px;
+    }
+    &__title{
+        padding-top: 8px;
+        margin-bottom: 16px;
+        @include media(lg){
+            padding-top: 5px;
+        }
+    }
+    &__desc{
+        margin-bottom: 14px;
+    }
+    &__bot{
+        margin-bottom: 12px;
+    }
+    &__contact{
+        a{
+            display: block;
+            text-decoration: none;
+            margin: 0;
+            line-height: 1.7;
+        }
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding-left: 15px;
+        margin-bottom: 13px;
+        li{
+            position: relative;
+            margin-bottom: 2px;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 4px;
+                height: 4px;
+                background-color: #DDDD;
+                top: 50%;
+                left: -15px;
+                border-radius: 50%;
+                transition: all .3s ease;
+            }
+            &:hover{
+                a{
+                    color: $accent;
+                }
+                &::after{
+                    background-color: $accent;
+                }
+            }
+            a{
+                text-decoration: none;
+                transition: all .3s ease;
+            }
+        }
+    }
+    &__picture{
+        padding-left: 10px;
+        @include media(lg){
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    }
+    &__img{
+        padding-top: 80%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 4px;
+        margin-bottom: 10px;
+        @include media(lg){
+            padding-top: 60%;
+        }
+    }
+    &__col{
+        padding-left: 0 ;
+        padding-right: 0 ;
+    }
+    &__form{
+        width: 100%;
+        margin-bottom: 20px;
+        input{
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            padding: 2px 2px 8px 0px;
+            color: #AAA;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+    &__bottom{
+        padding: 25px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    &__follow{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li{
+            margin: 0 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            i{
+                transition: all .3s ease;
+            }
+            &:hover{
+                i{
+                    color: $accent;
+                }
+            }
+        }
+    }
+    &__us{
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+}

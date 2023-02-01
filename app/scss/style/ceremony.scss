@@ -1,0 +1,104 @@
+.ceremony{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include media(lg){
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    @include media(sm){
+        padding-bottom: 5px;
+    }
+    &__box{
+        @include media(lg){
+            text-align: center;
+        }
+    }
+    &__title{
+        margin-bottom: 16px;
+        max-width: 90%;
+        @include media(lg){
+            margin: 0 auto;
+        }
+        .title{
+            @include media(xl){
+                font-size: 33px;
+            }
+            @include media(sm){
+                font-size: 27px;
+            }
+        }
+    }
+    &__desc{
+        max-width: 90%;
+        @include media(lg){
+            margin-bottom: 24px;
+            max-width: 100%;
+        }
+    }
+    &__card{
+        padding: 30px 25px;
+        text-align: center;
+        position: relative;
+        *{
+            color: #fff;
+        }
+        @include media(lg){
+            margin-bottom: 25px;
+            padding: 20px 15px;
+        }
+        &-green{
+            z-index: 3;
+            background-color: #25cd44;
+            transform: translateX(150px) translateY(30px);
+            @include media(lg){
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+        &-purple{
+            background-color: #8000ff;
+            transform: translateX(100px) translateY(90px);
+            z-index: 4;
+            @include media(lg){
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+        &-red{
+            z-index: 6;
+            background-color: #ee0034;
+            transform: translateY(110px);
+            @include media(lg){
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+        &-yellow{
+            background-color: #ffb339;
+            transform: translateX(50px) translateY(-20px);
+            z-index: 5;
+            @include media(lg){
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+    }
+    &__num{
+        margin-bottom: 8px;
+        *{
+            font-size: 24px;
+            @include bold;
+            margin: 0;
+        }
+    }
+    &__speak{
+        margin-bottom: 15px;
+        *{
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    &__inf{
+        *{
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
+}

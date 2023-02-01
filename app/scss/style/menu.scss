@@ -1,0 +1,38 @@
+.menu{
+    &__block{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all .3s ease;
+        &:hover{
+            color: $accent;
+        }
+        &-active{
+            color: $accent;
+        }
+    }
+    &-header{
+        .menu{
+            &__block{
+                display: block;
+            }
+            &__item{
+                margin-bottom: 12px;
+            }
+            &__link{
+                color: #fff;
+                cursor: pointer;
+                &-active{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

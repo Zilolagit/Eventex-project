@@ -1,0 +1,99 @@
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    &__logo{
+        padding-top: 35px;
+        @include media(lg){
+            padding-top: 31px;
+        }
+        @include media(sm){
+            padding-top: 15px;
+        }
+    }
+    &__menu{
+        padding-top: 40px;
+        i{
+            padding-left: 4px;
+        }
+        @include media(lg){
+            padding-top: 10px;
+        }
+    }
+
+    &__icons{
+        padding-top: 35px;
+        display: flex;
+        *{
+            color: #fff;
+        }
+    }
+    &__cart{
+        margin-left: 35px;
+        position: relative;
+        &::after{
+            content: "0";
+            position: absolute;
+            top: 0;
+            right: -3px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            font-size: 7px;
+            background-color: $accent;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 15px;
+            background-color: #fff;
+            opacity: .5;
+            left: -100%;
+            top: 5px;
+        }
+    }
+    &__btn{
+        padding-top: 30px;
+        .btn{
+            @include media(xl){
+                padding: 10px 22px;
+                font-size: 14px;
+            }
+            @include media(lg){
+                padding: 10px 19px;
+            }
+        }
+    }
+    &__mbt{
+        padding-top: 30px;
+        @include media(sm){
+            padding-top: 16px;
+        }
+        *{
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+            line-height: 1;
+            @include bold;
+        }
+    }
+    &__convas{
+        background-color: $accent;
+        padding: 20px;
+    }
+    &__close{
+        background-color: transparent;
+        font-size: 24px;
+        color: #fff;
+        display: flex;
+        justify-content: end;
+        border: none;
+    }
+}

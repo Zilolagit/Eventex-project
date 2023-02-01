@@ -1,0 +1,86 @@
+.count{
+    border-top-right-radius: 20px;
+    transform: skewX(28deg);
+    background-color: #fff;
+    // overflow: hidden;
+    @include media(lg){
+        transform: skewX(0deg);
+        border-radius: 0;
+        border-radius: 10px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-right: 75px;
+        background-color: transparent;
+        margin-left: 75px;
+    }
+    @include media(sm){
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    padding: 20px 0px;
+    &__row{
+        --bs-gutter-x:0rem;
+        --bs-gutter-y:0rem;
+    }
+    &__box{
+        text-align: center;
+        position: relative;
+        padding-left: 22px;
+        @include media(lg){
+            padding-left: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: -35%;
+            width: 35%;
+            height: 100%;
+            background-color: #fff;
+            transform: skewX(-28deg);
+            @include media(lg){
+                transform: skewX(0deg);
+                display: none;
+            }
+        }
+    }
+    &__num{
+        transform: skewX(-28deg);
+        @include media(lg){
+            transform: skewX(0deg);
+            background-color: #fff;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            padding: 12px 0px;
+        }
+        h2{
+            line-height: 1.4;
+            text-transform: uppercase;
+            font-size: 53px;
+            @include bold;
+            @include media(md){
+                font-size: 42px;
+            }
+            span{
+                @include regular;
+                font-size:27px;
+                display: block;
+                @include media(md){
+                    font-size: 18px;
+                }
+            }
+        }
+        &-red{
+            color: $accent;
+        }
+        &-yellow{
+            color: #ffb339;
+        }
+        &-green{
+            color: #25cd44;
+        }
+        &-purple{
+            color: #8000ff;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.logo{
+    img{
+        width: 180px;
+        @include media(md){
+            width: 150px;
+        }
+    }
+}

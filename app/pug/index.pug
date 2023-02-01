@@ -1,0 +1,963 @@
+extends layout/app 
+block var
+    - let page_title = "Home";
+block content
+    section.start 
+        .container
+            .row
+                .col-lg-7
+                    .start__box
+                        .row 
+                            .col-md-4
+                                .start__cart
+                                    .start__icon 
+                                        i.bi.bi-calendar
+                                    .start__time 
+                                        p 24-28 DECEMBER, 2022
+                            .col-md-8
+                                .start__cart
+                                    .start__icon 
+                                        i.bi.bi-geo-alt-fill
+                                    .start__time 
+                                        p 21 KING STREET, 1205 DHAKA BD
+                        .start__info 
+                            h1.title.title-white.title-large Biggest Business 
+                                br
+                                |Conference 2022
+                        .start__desc 
+                            p.desc.desc-white Join this year's biggest business conference with over 150 participants and some of the most renowned keynote speakers of present day.
+                        .row 
+                            .col-md-4.col-6
+                                .header__btn
+                                    button.btn register now
+                            .col-md-4.col-6
+                                .header__btn
+                                    button.btn.btn-bg view more
+                .col-lg-5 
+                        .swiper.slider#slider
+                            .swiper-wrapper
+                                .swiper-slide.slider__slide(style="background-image:url(../../../image/image__1.jpg);")
+                                .swiper-slide.slider__slide(style="background-image:url(../../../image/image__2.jpg);")
+                                .swiper-slide.slider__slide(style="background-image:url(../../../image/image__3.jpg);")
+                            .swiper-pagination
+        .row.count__row
+            .col-lg-6.count__col
+                .count
+                    .row 
+                        .col-lg-10.offset-lg-1
+                            .count__box
+                                .row
+                                    .col-6.col-md-3
+                                        .count__num
+                                            h2.count__num-red 23 
+                                                span Day
+                                    .col-6.col-md-3
+                                        .count__num
+                                            h2.count__num-yellow 18
+                                                span  Hours
+                                    .col-6.col-md-3
+                                        .count__num
+                                            h2.count__num-green 18
+                                                span  Hours
+                                    .col-6.col-md-3
+                                        .count__num.count__num-purple
+                                            h2 23
+                                                span  DAY
+    section.feature
+        .container
+            .row 
+                .col-lg-8.offset-lg-2
+                    .feature__box
+                        .feature__info
+                            p.info Features
+                        .feature__title
+                            h3.title Creative Thinking for Event Conference
+                        .feature__desc 
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            .row 
+                .col-md-5.feature__mar
+                    .feature__card
+                        .feature__top 
+                            h2.title.title-medium Meet Our Top Marketing Speaker
+                        .feature__mal
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    .feature__img(style="background-image:url(../../../image/img.jpg);")
+                .col-md-5.offset-md-2.offset-lg-1.feature__mar
+                    .feature__img.feature__img-green(style="background-image:url(../../../image/img2.jpg);")
+                    .feature__card.feature__card-top
+                        .feature__top 
+                            h2.title.title-medium Learn Event Conference More
+                        .feature__mal
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+    section.ceremony
+        .container
+            .row
+                .col-lg-5
+                    .ceremony__box
+                        .ceremony__info
+                            p.info Ceremony
+                        .ceremony__title
+                            h3.title Business Conference for Solving Problems
+                        .ceremony__desc 
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. 
+                .col-lg-7
+                    .row
+                        .col-6.col-lg-3
+                            .ceremony__card.ceremony__card-green
+                                .ceremony__num
+                                    h4 1,500+
+                                .ceremony__speak
+                                    p Speakers
+                                .ceremony__inf
+                                    p Influential media, entertainment & technology show
+                        .col-6.col-lg-3
+                            .ceremony__card.ceremony__card-purple
+                                .ceremony__num
+                                    h4 1,500+
+                                .ceremony__speak
+                                    p Speakers
+                                .ceremony__inf
+                                    p Influential media, entertainment & technology show
+                        .col-6.col-lg-3
+                            .ceremony__card.ceremony__card-yellow
+                                .ceremony__num
+                                    h4 1,500+
+                                .ceremony__speak
+                                    p Speakers
+                                .ceremony__inf
+                                    p Influential media, entertainment & technology show
+                        .col-6.col-lg-3
+                            .ceremony__card.ceremony__card-red
+                                .ceremony__num
+                                    h4 1,500+
+                                .ceremony__speak
+                                    p Speakers
+                                .ceremony__inf
+                                    p Influential media, entertainment & technology show
+    section.about(style="background-image: url(../../image/person-2.jpg);")
+        .container
+            .row 
+                .col-lg-6 
+                    .about__box
+                        .about__info
+                            p.info Experience Us
+                        .about__title
+                            h3.title Innovation & About Event Inspiration
+                        .about__desc 
+                            p.desc But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because.
+                        .row 
+                            .col-lg-7
+                                .row 
+                                    .col-lg-4.col-3
+                                        .about__pic(style="background-image:url(../../../image/person-1.jpg);")
+                                    .col-lg-8.col-9
+                                        .about__name
+                                            p.info.info-small Special Gaest
+                                        .about__fam 
+                                            h3.title.title-small Adestion Nickon
+                                        .about__fund 
+                                            p CEO & CO - FUNDER
+    section.schedule.d-none.d-md-block
+        .container 
+            .row 
+                .col-lg-8.offset-lg-2
+                    .feature__box
+                        .feature__info
+                            p.info The Festival
+                        .feature__title
+                            h3.title Conference Schedule
+                        .feature__desc 
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .col-lg-8.offset-lg-2
+                    ul#myTab.nav.nav-tabs.schedule__tabs(role='tablist')
+                        li.nav-item(role='presentation')
+                        button#home-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#home-tab-pane' type='button' role='tab' aria-controls='home-tab-pane' aria-selected='true') ALL EVENT
+                        li.nav-item(role='presentation')
+                        button#profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#profile-tab-pane' type='button' role='tab' aria-controls='profile-tab-pane' aria-selected='false') FESTIVITY
+                        li.nav-item(role='presentation')
+                        button#contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#contact-tab-pane' type='button' role='tab' aria-controls='contact-tab-pane' aria-selected='false') MASTERCLASS 
+                        li.nav-item(role='presentation')
+                        button#master-tab.nav-link(data-bs-toggle='tab' data-bs-target='#master-tab-pane' type='button' role='tab' aria-controls='master-tab-pane' aria-selected='false') SEMINAR
+                        li.nav-item(role='presentation')
+                        button#work-tab.nav-link(data-bs-toggle='tab' data-bs-target='#work-tab-pane' type='button' role='tab' aria-controls='work-tab-pane' aria-selected='false') WORKSHOP
+            #myTabContent.tab-content.schedule__content
+                #home-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab' tabindex='0')
+                    table.schedule__table(border="1")
+                        tr.schedule__head
+                            th.title.title-smaller
+                            th.title.title-smaller WENESDAY
+                            th.title.title-smaller THURSDAY
+                            th.title.title-smaller FRIDAY
+                            th.title.title-smaller SATURDAY
+                        tr
+                            td.title.title-smaller.title-regular 09:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 11:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                        tr
+                            td.title.title-smaller.title-regular 01:00pm
+                            td
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 03:00pm
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                #profile-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab' tabindex='0')
+                    table.schedule__table(border="1")
+                        tr.schedule__head
+                            th.title.title-smaller
+                            th.title.title-smaller WENESDAY
+                            th.title.title-smaller THURSDAY
+                            th.title.title-smaller FRIDAY
+                            th.title.title-smaller SATURDAY
+                        tr
+                            td.title.title-smaller.title-regular 09:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 11:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                        tr
+                            td.title.title-smaller.title-regular 01:00pm
+                            td
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 03:00pm
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                #contact-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab' tabindex='0')
+                    table.schedule__table(border="1")
+                        tr.schedule__head
+                            th.title.title-smaller
+                            th.title.title-smaller WENESDAY
+                            th.title.title-smaller THURSDAY
+                            th.title.title-smaller FRIDAY
+                            th.title.title-smaller SATURDAY
+                        tr
+                            td.title.title-smaller.title-regular 09:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 11:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                        tr
+                            td.title.title-smaller.title-regular 01:00pm
+                            td
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 03:00pm
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                #master-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='master-tab' tabindex='0')
+                    table.schedule__table(border="1")
+                        tr.schedule__head
+                            th.title.title-smaller
+                            th.title.title-smaller WENESDAY
+                            th.title.title-smaller THURSDAY
+                            th.title.title-smaller FRIDAY
+                            th.title.title-smaller SATURDAY
+                        tr
+                            td.title.title-smaller.title-regular 09:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 11:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                        tr
+                            td.title.title-smaller.title-regular 01:00pm
+                            td
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 03:00pm
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                #work-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='work-tab' tabindex='0')
+                    table.schedule__table(border="1")
+                        tr.schedule__head
+                            th.title.title-smaller
+                            th.title.title-smaller WENESDAY
+                            th.title.title-smaller THURSDAY
+                            th.title.title-smaller FRIDAY
+                            th.title.title-smaller SATURDAY
+                        tr
+                            td.title.title-smaller.title-regular 09:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 11:00am
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+                        tr
+                            td.title.title-smaller.title-regular 01:00pm
+                            td
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-purple
+                                    p Hosts
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-green
+                                    p Hosts
+                            td 
+                        tr
+                            td.title.title-smaller.title-regular 03:00pm
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-red
+                                    p Hosts
+                            td 
+                            td 
+                            td
+                                .schedule__title 
+                                    h3.title.title-smaller.title-regular William Jashon 
+                                .schedule__time 
+                                    p.desc 09:00am - 10:00am
+                                .schedule__name.schedule__name-yellow
+                                    p Hosts
+    section.meet
+        .container
+            .row
+                .col-lg-6.order-2.order-lg-1.meet__col
+                        .swiper.person#meetSwiper
+                            .swiper-wrapper
+                                .swiper-slide.person__slide(style="background-image:url(../../../image/image__3.jpg);")
+                                    .meet__part 
+                                        .meet__name 
+                                            h4 Glen Killy
+                                        .meet__job 
+                                            p Developer
+                                        ul.meet__list
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-facebook-f
+                                            li
+                                                a(href="#")
+                                                    i.fa-brands.fa-instagram
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-twitter
+                                            li
+                                                a(href="#") 
+                                                    i.fa-solid.fa-info
+                                .swiper-slide.person__slide(style="background-image:url(../../../image/image__2.jpg);")
+                                    .meet__part 
+                                        .meet__name 
+                                            h4 Glen Killy
+                                        .meet__job 
+                                            p Developer
+                                        ul.meet__list
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-facebook-f
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-instagram
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-twitter
+                                            li
+                                                a(href="#") 
+                                                    i.fa-solid.fa-info
+                                .swiper-slide.person__slide(style="background-image:url(../../../image/image__1.jpg);")
+                                    .meet__part 
+                                        .meet__name 
+                                            h4 Glen Killy
+                                        .meet__job 
+                                            p Developer
+                                        ul.meet__list
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-facebook-f
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-instagram
+                                            li
+                                                a(href="#") 
+                                                    i.fa-brands.fa-twitter
+                                            li
+                                                a(href="#") 
+                                                    i.fa-solid.fa-info
+                            .swiper-button-next
+                            .swiper-button-prev
+                .col-lg-6.order-1.order-lg-2
+                    .meet__box
+                        .meet__info
+                            p.info Visionary
+                        .meet__title
+                            h3.title Meet an Amazing Speakers
+                        .meet__desc 
+                            p.desc But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+    section.sponsor
+        .container 
+            .row 
+                .col-lg-4
+                    .sponsor__box
+                        .sponsor__info
+                            p.info Sponsored
+                        .sponsor__title
+                            h3.title Partners & Sponsors
+                        .sponsor__desc 
+                            p.desc But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                        .sponsor__btn
+                            button.btn BECOME A SPONSORS
+                .col-lg-8
+                    .sponsor__name 
+                        p.title.title-small Platinum Sponsors
+                    .swiper#swiperImg.sponsor__swiper
+                        .swiper-wrapper
+                            .swiper-slide.sponsor__img(style="background-image:url(../../../image/spon-1.svg);")
+                            .swiper-slide.sponsor__img.sponsor__img-green(style="background-image:url(../../../image/spon-4.svg);")
+                            .swiper-slide.sponsor__img(style="background-image:url(../../../image/spon-5.svg);")
+                    .sponsor__name 
+                        p.title.title-small Gold Sponsors
+                    .swiper#swiperImg
+                        .swiper-wrapper
+                            .swiper-slide.sponsor__img(style="background-image:url(../../../image/spon-5.svg);")
+                            .swiper-slide.sponsor__img.sponsor__img-green(style="background-image:url(../../../image/spon-3.svg);")
+                            .swiper-slide.sponsor__img(style="background-image:url(../../../image/spon-1.svg);")
+    section.say
+        .container
+            .row
+                .col-md-10.offset-md-1
+                    .say__box
+                        .say__info
+                            p.info Testimonials
+                        .say__title
+                            h3.title What Members Are Saying
+                        .say__desc 
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            .say__part
+                .swiper.mySwiper.say__swiper#saySwiper
+                    .swiper-wrapper
+                        .swiper-slide.say__slide
+                            .row 
+                                .col-lg-6 
+                                    .say__img(style="background-image:url(../../../image/f1.jpg);")
+                                .col-lg-6.say__col
+                                    .say__mal 
+                                        p.desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    .say__name 
+                                        h3 Ameena Selim
+                                    .say__fund 
+                                        p Ceo & Co-Founder
+                        .swiper-slide.say__slide
+                            .row 
+                                .col-lg-6 
+                                    .say__img(style="background-image:url(../../../image/f2.jpg);")
+                                .col-lg-6.say__col
+                                    .say__mal 
+                                        p.desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    .say__name 
+                                        h3 Ameena Selim
+                                    .say__fund 
+                                        p Ceo & Co-Founder
+                        .swiper-slide.say__slide
+                            .row 
+                                .col-lg-6 
+                                    .say__img(style="background-image:url(../../../image/f1.jpg);")
+                                .col-lg-6.say__col
+                                    .say__mal 
+                                        p.desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    .say__name 
+                                        h3 Ameena Selim
+                                    .say__fund 
+                                        p Ceo & Co-Founder
+                        .swiper-slide.say__slide
+                            .row 
+                                .col-lg-6
+                                    .say__img(style="background-image:url(../../../image/f1.jpg);")
+                                .col-lg-6.say__col
+                                    .say__mal 
+                                        p.desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    .say__name 
+                                        h3 Ameena Selim
+                                    .say__fund 
+                                        p Ceo & Co-Founder
+                    .swiper-pagination
+    section.ticket
+        .container
+            .row
+                .col-md-4.col-lg-3.order-2.order-lg-1
+                    .ticket__card
+                        .ticket__img(style="background-image:url(../../../image/image__1.jpg);")
+                        .ticket__part
+                            .ticket__middle
+                                h3.title.title-medium Corporate
+                            ul.ticket__list 
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                            .row
+                                .col-6.d-flex.align-items-center
+                                    .ticket__btn
+                                        btn.btn.btn-none BUY NOW
+                                .col-6.d-flex.justify-content-end
+                                    .ticket__buy 
+                                        p $ 
+                                            span.title.title-middle
+                                                |75
+                                            span.desc.desc-small /mo
+                .col-md-4.col-lg-3.order-3.order-lg-2
+                    .ticket__card
+                        .ticket__img(style="background-image:url(../../../image/image__1.jpg);")
+                        .ticket__part
+                            .ticket__middle
+                                h3.title.title-medium Professional
+                            ul.ticket__list 
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                            .row
+                                .col-6.d-flex.align-items-center
+                                    .ticket__btn
+                                        btn.btn.btn-none BUY NOW
+                                .col-6.d-flex.justify-content-end
+                                    .ticket__buy 
+                                        p $ 
+                                            span.title.title-middle
+                                                |99
+                                            span.desc.desc-small /mo
+                .col-md-4.col-lg-3.order-4.order-lg-3
+                    .ticket__card
+                        .ticket__img(style="background-image:url(../../../image/image__1.jpg);")
+                        .ticket__part
+                            .ticket__middle
+                                h3.title.title-medium Enterprise
+                            ul.ticket__list 
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                                li.desc Regular Seating
+                            .row
+                                .col-6.d-flex.align-items-center
+                                    .ticket__btn
+                                        btn.btn.btn-none BUY NOW
+                                .col-6.d-flex.justify-content-end
+                                    .ticket__buy 
+                                        p $ 
+                                            span.title.title-middle
+                                                |99
+                                            span.desc.desc-small /mo
+                .col-lg-3.order-1.order-lg-4
+                    .ticket__box
+                        .ticket__info
+                            p.info Pricing Table
+                        .ticket__title
+                            h3.title Are you with us? Get tickets
+                        .ticket__desc 
+                            p.desc But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                        .ticket__btn
+                            button.btn BUY TICKET
+    section.blog
+        .container
+            .row
+                .col-lg-8.offset-lg-2 
+                    .blog__box
+                        .blog__info
+                            p.info Blog Post
+                        .blog__title
+                            h3.title Read Our Latest News
+                        .blog__desc 
+                            p.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            .row 
+                .col-lg-4
+                    .row 
+                        .col-lg-12.col-md-6
+                            .blog__card
+                                .blog__img.blog__img-large(style="background-image:url(../../../image/image__1.jpg);")
+                                ul.blog__time 
+                                    li.desc.desc-small by Jane Doe
+                                    li.desc.desc-small.desc-border Conference
+                                    li.desc.desc-small Nov 23, 2022
+                                .blog__text 
+                                    h4.title.title-smallest Improve Your Event Promotion Online
+                                .blog__mal
+                                    p.desc.desc-small Lorem ipsum dolor sit amet, consectetur enim ad minim veniam, quis nostrud exercitation....
+                                .blog__btn
+                                    button.btn.btn-none READ MORE
+                                        i.fa-solid.fa-angle-right
+                        .col-lg-12.col-md-6
+                            .blog__card
+                                .blog__img.blog__img-large(style="background-image:url(../../../image/image__1.jpg);")
+                                ul.blog__time 
+                                    li.desc.desc-small by Jane Doe
+                                    li.desc.desc-small.desc-border Conference
+                                    li.desc.desc-small Nov 23, 2022
+                                .blog__text 
+                                    h4.title.title-smallest Improve Your Event Promotion Online
+                                .blog__mal
+                                    p.desc.desc-small Lorem ipsum dolor sit amet, consectetur enim ad minim veniam, quis nostrud exercitation....
+                                .blog__btn
+                                    button.btn.btn-none READ MORE
+                                        i.fa-solid.fa-angle-right
+                .col-lg-8 
+                        .row 
+                            .col-md-12 
+                                .blog__card.blog__card-right 
+                                    .row
+                                        .col-md-4
+                                            .blog__img(style="background-image:url(../../../image/image__1.jpg);")
+                                        .col-md-8
+                                            ul.blog__time 
+                                                li.desc.desc-small by Jane Doe
+                                                li.desc.desc-small.desc-border Conference
+                                                li.desc.desc-small Nov 23, 2022
+                                            .blog__text 
+                                                h4.title.title-smallest Brooklyn Beta Was The Most Important Conferen Best Tristique
+                                            .blog__mal
+                                                p.desc Lorem ipsum dolor sit amet, consectetur enim ad minim veniam, quis nostrud exercitation....
+                                            .blog__btn
+                                                button.btn.btn-none READ MORE
+                                                    i.fa-solid.fa-angle-right
+                            .col-md-12 
+                                .blog__card.blog__card-right 
+                                    .row
+                                        .col-md-4
+                                            .blog__img(style="background-image:url(../../../image/image__1.jpg);")
+                                        .col-md-8
+                                            ul.blog__time 
+                                                li.desc.desc-small by Jane Doe
+                                                li.desc.desc-small.desc-border Conference
+                                                li.desc.desc-small Nov 23, 2022
+                                            .blog__text 
+                                                h4.title.title-smallest Brooklyn Beta Was The Most Important Conferen Best Tristique
+                                            .blog__mal
+                                                p.desc Lorem ipsum dolor sit amet, consectetur enim ad minim veniam, quis nostrud exercitation....
+                                            .blog__btn
+                                                button.btn.btn-none READ MORE
+                                                    i.fa-solid.fa-angle-right
+                            .col-md-12
+                                .blog__card.blog__card-right 
+                                    .row
+                                        .col-md-4 
+                                            .blog__img(style="background-image:url(../../../image/image__1.jpg);")
+                                        .col-md-8
+                                            ul.blog__time 
+                                                li.desc.desc-small by Jane Doe
+                                                li.desc.desc-small.desc-border Conference
+                                                li.desc.desc-small Nov 23, 2022
+                                            .blog__text 
+                                                h4.title.title-smallest Brooklyn Beta Was The Most Important Conferen Best Tristique
+                                            .blog__mal
+                                                p.desc Lorem ipsum dolor sit amet, consectetur enim ad minim veniam, quis nostrud exercitation....
+                                            .blog__btn
+                                                button.btn.btn-none READ MORE
+                                                    i.fa-solid.fa-angle-right
+    section.hurry(style="background-image:url(../../../image/hurry.jpg);")
+        .container
+            .row
+                .col-md-8.offset-md-2
+                    .hurry__box
+                        .hurry__info
+                            p.info.info-white hurry up!
+                        .hurry__title
+                            h3.title.title-white Asia's Leading Conference Book your Seat Now
+                        .hurry__desc
+                            p.desc.desc-white But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+                        .hurry__btn
+                            button.btn GET TICKETS

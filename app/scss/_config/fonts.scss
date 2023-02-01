@@ -1,0 +1,33 @@
+@import "_mixins/font-face";
+
+@include font-face("lexend-bold","../font/Lexend-Bold",700);
+@include font-face("lexend-regular","../font/Lexend-Regular",400);
+@include font-face("lexend-extraBold","../font/Lexend-ExtraBold",900);
+@include font-face("lexend-extraLight","../font/Lexend-ExtraLight",200);
+@include font-face("lexend-light","../font/Lexend-Light",300);
+@include font-face("cluster","../font/Cluster",400);
+@include font-face("Others","../font/Others",400);
+
+@mixin light{
+    font-family: "lexend-light",sans-serif;
+}
+
+@mixin regular{
+    font-family: "lexend-regular",sans-serif;
+}
+
+@mixin bold{
+    font-family: "lexend-bold",sans-serif;
+}
+@mixin exBold{
+    font-family: "lexend-extraBold",sans-serif;
+}
+@mixin exLight{
+    font-family: "lexend-extraLight",sans-serif;
+}
+@mixin other{
+    font-family: "cluster",sans-serif;
+}
+@mixin weird{
+    font-family: "Others",sans-serif;
+}

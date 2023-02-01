@@ -1,0 +1,57 @@
+.start{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image:url(../../image/start.jpg);
+    @include media(lg){
+        background-image: url(none);
+        background-color: #08080A;
+    }
+    &__box{
+        padding-top: 200px;
+        @include media(lg){
+            padding-top: 125px;
+        }
+        @include media(sm){
+            padding-top: 105px;
+        }
+    }
+    &__cart{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    &__time{
+        margin-left: 10px;
+        *{
+            margin: 0;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    &__icon{
+        *{
+            color: $accent;
+            font-size: 18px;
+        }
+    }
+    &__info{
+        margin-bottom: 24px;
+        .title{
+            &-large{
+                @include  media(md){
+                    font-size: 45px;
+                }
+                @include  media(sm){
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+    &__desc{
+        max-width: 500px;
+    }
+}
